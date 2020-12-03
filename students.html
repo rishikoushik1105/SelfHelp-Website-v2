@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Patron Data</title>
+        <link rel="stylesheet" href="styles/students.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/footer.css">
+    </head>
+    <body style="background-color: sienna;">
+
+        <header>
+            <nav>
+              <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MentalHealth.html">Mental Health Help</a></li>
+                <li><a href="PhysicalHealth.html">Physical Health Help</a></li>
+                <li><a href="LifeTips.html">Life Tips</a></li>
+                <li><a href="Career.html">Career Help</a></li>
+                <li><a href="Meditation.html">Meditation and Yoga</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+
+
+        <h1 style="align-content: center; text-align: center;">Patrons Report</h1>
+    <table style="width:50%; text-align: center; align-content: center; align-items: center; margin-left: 350px;">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Country</th>
+          <th>Email</th>
+          <th>Website</th>
+        </tr>
+        <?php
+                 include 'C:\xampp\htdocs\SelfHelp Website\mysql.php';
+                 ?>
+      </table>
+      <br>
+      <div style="background-color:blue; width:10%; margin:auto;padding:10px;text-align: center;">
+      <a href="index.html" style="color:white; margin:auto; padding:10px;">Go back</a>
+      </div>
+    </br>
+      <div style="background-color:blue; width:20%; margin:auto;padding:10px;text-align: center;">
+      <a href="insert.html" style="color:white; margin:auto; padding:10px;">Insert another Patron</a>
+      </div>
+
+
+      <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>FinerMinds<span>&nbsp;Self-Help</span></h3>
+            <p class="footer-company-name">Rishi Koushik S    &copy; 2020</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9500035027</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">finerminds@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </body>
+</html>

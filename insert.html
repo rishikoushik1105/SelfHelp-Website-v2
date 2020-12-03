@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Patron Data</title>
+        <link rel="stylesheet" href="styles/students.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/footer.css">
+    </head>
+    <body style="background-color: sienna;">
+
+
+        <!-- **************************HEADER STARTS**************************** -->
+        <header>
+            <nav>
+              <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MentalHealth.html">Mental Health Help</a></li>
+                <li><a href="PhysicalHealth.html">Physical Health Help</a></li>
+                <li><a href="LifeTips.html">Life Tips</a></li>
+                <li><a href="Career.html">Career Help</a></li>
+                <li><a href="Meditation.html">Meditation and Yoga</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+          <!-- ***************************HEADER ENDS*************************** -->
+
+
+
+        <h1 style="align-content: center; text-align: center;">Add a Patron</h1>
+
+        <br/>
+<div style="background-color:purple; width:40%; margin:auto; padding:20px;">
+        <form name="loginForm" method="post" action="phpinsert.php" >
+    First Name: <input style="width:250px; height:30px;" type="text" name="FirstName"/> <br/> <br/>
+    Last Name : <input style="width:250px; height:30px;" type="text" name="LastName"/> <br/> </br>
+
+
+
+<br/>
+Your Country :
+<select name="Country" style="width:170px; height:30px;">
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="Algeria">Algeria</option>
+    <option value="Australia">Australia</option>
+    <option value="Hong Kong">Hong Kong</option>
+    <option value="Hungary">Hungary</option>
+    <option value="Iceland">Iceland</option>    
+    <option value="India">India</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="Senegal">Senegal</option>
+    <option value="Sri Lanka">Sri Lanka</option>
+    <option value="Yemen">Yemen</option>
+    <option value="Zaire">Zaire</option>
+    <option value="Zambia">Zambia</option>
+    <option value="Zimbabwe">Zimbabwe</option>
+</select><br/><br/>
+<br>
+Email ID: <input style="width:270px; height:30px;" type="email" name="Email"/> <br/> <br/>
+Web Site: <input style="width:270px; height:30px;" type="text" name="Website"/> <br/> <br/>
+<br>
+<input style="background-color: palevioletred; color:black; padding:10px; margin: auto;" type="submit" value="Submit Details" />
+    <br/>
+
+</form>
+</div>
+
+
+    <!-- ***************************FOOTER STARTS***************************** -->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>FinerMinds<span>&nbsp;Self-Help</span></h3>
+                <p class="footer-company-name">Rishi Koushik S    &copy; 2020</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 9500035027</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">finerminds@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- *****************************FOOTER ENDS******************************* -->
+
+
+        
+        </body>
+    </html>

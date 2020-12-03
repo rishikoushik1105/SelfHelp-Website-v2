@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="pages.xsl"?>
+<Resource>
+<Physical>
+    <Physical_Help UID="123">
+        <id>01</id>
+        <name>Vid- Muscle Building</name>
+        <type>Youtube Video</type>
+        <time>20 mins</time>
+    </Physical_Help>
+    <Physical_Help UID="245">
+        <id>02</id>
+        <name>Weight Loss</name>
+        <type>Article with Video</type>
+        <time>50 mins</time>
+    </Physical_Help>
+    <Physical_Help UID="347">
+        <id>03</id>
+        <name>Dietary Regulations</name>
+        <type>Article</type>
+        <time>30 mins</time>
+    </Physical_Help>
+    <Physical_Help UID="589">
+        <id>04</id>
+        <name>Cardio</name>
+        <type>Article with Video</type>
+        <time>35 mins</time>
+    </Physical_Help>
+</Physical>
+
+
+<Mental>
+    <Mental_Help UID="005">
+        <id>01</id>
+        <name>Vid- Identify Origin of Stress Part 1</name>
+        <type>Video</type>
+        <time>42 mins</time>
+    </Mental_Help>
+    <Mental_Help UID="016">
+        <id>02</id>
+        <name>Vid- Identify Origin of Stress Part 2</name>
+        <type>Video</type>
+        <time>45 mins</time>
+    </Mental_Help>
+    <Mental_Help UID="017">
+        <id>03</id>
+        <name>Mental Wellbeing</name>
+        <type>Article with Video</type>
+        <time>62 mins</time>
+    </Mental_Help>
+    <Mental_Help UID="021">
+        <id>04</id>
+        <name>Vid- Help yourself</name>
+        <type>Article with Video</type>
+        <time>30 mins</time>
+    </Mental_Help>
+    <Mental_Help UID="057">
+        <id>05</id>
+        <name>Improve tolerance and patience</name>
+        <type>Article with Video</type>
+        <time>130 mins</time>
+    </Mental_Help>
+</Mental>
+
+
+<Career>
+    <Career_Help UID="114">
+        <id>01</id>
+        <name>Vid- Selecting Stream</name>
+        <type>Video</type>
+        <time>40 mins</time>
+    </Career_Help>
+    <Career_Help UID="333">
+        <id>02</id>
+        <name>Career Options</name>
+        <type>Article with Video</type>
+        <time>125 mins</time>
+    </Career_Help>
+    <Career_Help UID="765">
+        <id>03</id>
+        <name>Booming Fields</name>
+        <type>Article with Video</type>
+        <time>65 mins</time>
+    </Career_Help>
+</Career>
+
+</Resource>

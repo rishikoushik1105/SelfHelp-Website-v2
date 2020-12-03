@@ -1,0 +1,137 @@
+<html>
+    <head>
+		<title> Self-Help Website </title>
+		<link rel="stylesheet" href="styles/navbar.css">
+		<link rel="stylesheet" href="styles/footer.css">
+		<link rel="stylesheet" href="table.css">
+	</head>
+
+	<script>
+		function loadResourceXML() {
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+			  displayResourceTable(this);
+			}
+		  };
+		  xhttp.open("GET", "page.xml", true);
+		  xhttp.send();
+		}
+		function displayResourceTable(xml) {
+		  var i;
+		  var xmlDoc = xml.responseXML;
+		  var table1="<tr><th>ID Number</th>"+
+                    "<th>Name</th>"+
+                    "<th>Type of Content</th>"+
+                    "<th>Time required</th></tr>";
+		  var x = xmlDoc.getElementsByTagName("Physical_Help");
+		  for (i = 0; i <x.length; i++) { 
+			table1 += "<tr><td>" +
+			x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+		  }
+		  
+		  
+		  var j;
+		  var table2="<tr><th>ID Number</th>"+
+                    "<th>Name</th>"+
+                    "<th>Type of Content</th>"+
+                    "<th>Time required</th></tr>";
+		  var y = xmlDoc.getElementsByTagName("Mental_Help");
+		  for (j = 0; j <y.length; j++) { 
+			table2 += "<tr><td>" +
+			y[j].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			y[j].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			y[j].getElementsByTagName("type")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			y[j].getElementsByTagName("time")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+		  }
+
+		  var k;
+		  var table3="<tr><th>ID Number</th>"+
+                    "<th>Name</th>"+
+                    "<th>Type of Content</th>"+
+                    "<th>Time required</th></tr>";
+		  var z = xmlDoc.getElementsByTagName("Career_Help");
+		  for (k = 0; k <z.length; k++) { 
+			table3 += "<tr><td>" +
+			z[k].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			z[k].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			z[k].getElementsByTagName("type")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			z[k].getElementsByTagName("time")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+		  }
+
+
+		document.getElementById("resource-table1").innerHTML = table1;
+		document.getElementById("resource-table2").innerHTML = table2;
+		document.getElementById("resource-table3").innerHTML = table3;
+		}
+		</script>
+		
+	<body style="margin: 0; background-color: blueviolet;">
+		
+		<header>
+            <nav>
+              <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MentalHealth.html">Mental Health Help</a></li>
+                <li><a href="PhysicalHealth.html">Physical Health Help</a></li>
+                <li><a href="LifeTips.html">Life Tips</a></li>
+                <li><a href="Career.html">Career Help</a></li>
+                <li><a href="Meditation.html">Meditation and Yoga</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+
+		<h1 style="text-align: center; color:rgb(236, 55, 55); background-color: yellowgreen;">View All Resources</h1>
+		<button class="view_btn" type="submit" value="button" onclick="loadResourceXML()" >
+			View Details
+			<i class="material-icons" style="font-size:large; padding-right: 3px;padding-left: 5px;">
+			  Self-Help Resources
+			</i>
+		</button>
+		<br><br><hr>
+
+
+			<table style="text-align: center;" id="resource-table1" class="resource-table1"></table>
+			<br><br>
+			<table style="text-align: center;" id="resource-table2" class="resource-table2"></table>
+			<br><br>
+			<table style="text-align: center;" id="resource-table3" class="resource-table3"></table>
+			<br>
+
+
+
+			<footer class="footer-distributed">
+				<div class="footer-left">
+					<h3>FinerMinds<span>&nbsp;Self-Help</span></h3>
+					<p class="footer-company-name">Rishi Koushik S    &copy; 2020</p>
+				</div>
+				<div class="footer-center">
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+91 9500035027</p>
+					</div>
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:support@company.com">finerminds@gmail.com</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+</body>
+</html>
